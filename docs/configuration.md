@@ -325,6 +325,12 @@ You can read more about this in [the Django project's documentation](https://doc
     "localhost" is always allowed for docker healthcheck
 
     Defaults to "\*", which is all hosts.
+    
+`PAPERLESS_X_FRAME_OPTIONS=<x-frame-option>`
+
+: If you're planning on putting Paperless within an `iframe`, `embed`, etc.. You can read more about the accepted options at [Mozilla's documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options).
+
+    Defaults to "SAMEORIGIN".
 
 `PAPERLESS_CORS_ALLOWED_HOSTS=<comma-separated-list>`
 
